@@ -17,4 +17,4 @@
 - Os arquivos HTML de Index, Inserir, Alterar estão na pasta **template** conforme padrão Flask
 - Esta versão está sem o uso de CSS, porém o bootstrap está disponível na pasta **static**
 
-- A explicação do desenvolvimento está no vídeo em meu canal do Youtube: youtube.com/danielbrandao
+- A explicação do desenvolvimento está no vídeo em meu canal do Youtube: http://youtube.com/danielbrandao
