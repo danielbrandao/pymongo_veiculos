@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bem-vindo ao Portal AdminCAR</title>
+</head>
+<body>
+{% for carro in carros %}
+<div >
+  <div >
+          <div >
+            <h4 c>{{ carro.marca}} {{carro.modelo}}</h4>
+          </div>
+          <div >
+
+            <ul >
+              <li><h4>Categoria: {{ carro.categoria}}</h4></li>
+              <li><h4>Ano: R$ {{ carro.ano}}</h4></li>
+            </ul>
+            <h1 >R$ {{carro.preco}}</h1>
+          </div>
+        </div>
+      </div>
+</div>
+{% endfor %}
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+  <div c>
+    <h2>Lista de veículos</h2>
+    <a href="/"> voltar ao início </a>
+    <table >
+      <thead>
+      <tr>
+        <th>Marca</th>
+        <th>Modelo</th>
+        <th>Ano</th>
+        <th>Preço</th>
+        <th>Categoria</th>
+        <th>Ações</th>
+      </tr>
+      </thead>
+      <tbody>
+      {% for carro in carros %}
+      <tr>
+        <td><a href="/carro/{{carro._id}}"> {{carro.marca}} </a></td>
+        <td>{{carro.modelo}}</td>
+        <td>{{carro.ano}}</td>
+        <td>{{carro.preco}}</td>
+        <td>{{carro.categoria}}</td>
+        <td>
+          <a href="/carros/{{ carro._id }}/editar" >Editar</a>
+          <a href="/carros/{{ carro._id }}/excluir" >Excluir</a>
+        </td>
+      </tr>
+      {% endfor %}
+      </tbody>
+    </table>
+  </div>
+
+
+</body>
+</html>

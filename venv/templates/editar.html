@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+</head>
+<body>
+    <div >
+        <h1>Editar Cadastro</h1>
+        <form action="/carros/{{ carro._id }}/editar" method="POST">
+                <label for="marca" >Marca:</label>
+                <input type="text" name="marca" value="{{ carro.marca }}" id="marca" >
+                <label for="modelo" >Modelo:</label>
+                <input type="text" name="modelo" value="{{ carro.modelo }}" id="modelo" >
+                <label for="ano">Ano:</label>
+                <input type="text" name="ano" value="{{ carro.ano }}" id="ano" >
+                <label for="preco" >Preço:</label>
+                <input type="text" name="preco" value="{{ carro.preco }}" id="preco">
+                <label for="categoria" class="form-label">Categoria:</label>
+                <input type="text" name="categoria" value="{{ carro.categoria }}" id="categoria" class="form-control">
+                <button type="submit" class="btn btn-primary">Salvar</button>
+        </form>
+    </div>
+
+</body>
+</html>
